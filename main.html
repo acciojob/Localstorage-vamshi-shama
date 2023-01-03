@@ -26,19 +26,19 @@
   </div>
 
 <script>
- const submit = document.getElementById("submit");
- submit.addEventListener("click", displayDetails);
+ const txt = document.getElementById('name');
+ const submit = document.getElementById('submit');
+ submit.addEventListener('click', display);
+ const ouput = document.getElementById('plates');
 
- function displayDetails() {
-    const name = document.getElementById("name").value;
-
-    if(!name) {
-      alert("please add item");
-      return;
+ function display() {
+    output.innerHTML = txt.value;
+    if(!txt){
+      alert('type something!!!!');
+      return
     }
-
-    
  }
+
 </script>
 
 
